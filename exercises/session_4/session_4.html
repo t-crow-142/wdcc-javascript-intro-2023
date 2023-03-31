@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session 4</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="../style_sheet/style.css">
+</head>
+<body>
+    <header>
+        <h1>WDCC JavaScript Workshop</h1>
+    </header>
+    <nav>
+        <a href="../home/home.html">Home</a> | 
+        <a href="../session_1/session_1.html">Session_1</a> |
+        <a href="../session_2/session_2.html">Session_2</a> |
+        <a href="../session_3/session_3.html">Session_3</a> |
+        <a href="../session_4/session_4.html">Session_4</a>
+    </nav>
+    <main>
+        <h2>Session 4</h2>
+        <h3>Session content:</h3>
+        <ul>
+            <li>AJAX using the Fetch API</li>
+            <li>async/await</li>
+        </ul>
+        <h3>
+            Example:
+        </h3>
+        <p>
+            In this example, the user can input the number of an article to retrieve from the server and when they click the button, it will display the content of that article in the page. 
+        </p>
+        <p>
+            This example uses an 'articles' endpoint on a server that returns an article matching the requested id. You can directly view the data that is returned by browsing straight to the URL: <a href="https://trex-sandwich.com/ajax/articles?id=1">https://trex-sandwich.com/ajax/articles?id=1</a>.
+        </p>
+        <p>
+            If you change the 1 at the end of that URL to another number between 1 and 15, it will return the JSObject for the matching article. When you input an article id in the input box in the page and click the button, the code is just concatentating/adding the id into the URL it requests. 
+        </p>
+        <p>
+            You can also see all of the other endpoints available on this server by browsing to this URL: <a href="https://trex-sandwich.com/ajax">https://trex-sandwich.com/ajax</a>
+        </p>
+
+
+        <div id="example">
+            <label for="articleId">ID of article to retrieve: </label><br><br>
+            <input type="number" id="articleId">
+            <br>
+            <br>
+            <button id="runExample">
+                Run example
+            </button>
+            <br><br>
+            <div id="displayExample">
+                Display example: 
+            </div>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h3>
+            Exercise:
+        </h3>
+
+        <p>
+            For this exercise, you will modify the code within the example rather than working on a completely new task.
+        </p>
+        <p>
+            The goal of this exercise is to also display the author's name along with the articles by each author that are currently displayed. However, this is not as simple as it seems. The article objects only have an 'author_id' property rather than the actual name of the authors. You can however access the author's name by supplying the id of a given author to another endpoint on the same server. 
+        </p>
+        <p>
+            Review the information about all available endpoints on the server: <a href="https://trex-sandwich.com/ajax">https://trex-sandwich.com/ajax</a>           
+        </p>
+        <p>
+            If we want to retrieve the information about the author with the 'author_id' 3, we could use this URL for the request: <a href="https://trex-sandwich.com/ajax/users?id=3">https://trex-sandwich.com/ajax/users?id=3</a>. Try clicking on that URL to see the data that is returned. If you change the last number in that URL, you can browse the different authors. You can use this URL in a fetch request to get the required data for each author but make sure you get the specific author that matches the article being retrieved.
+        </p>
+        <p>
+            To display the author of each article alongside the specific articles, you will need to modify the existing code from the example so that it makes a second request to the server to get an author object that will contain the author's name. To do this you will need to use the 'author_id' in the second request; remember that the author_id is a property of the article object returned from the first request. You will need to do each request in order to make sure that you can get the required id to be used in the second request.
+        </p>
+        <p>
+            When you have completed the code to get the author data from the server, make sure to display it in the page alongside the information about the article.
+        </p>
+
+
+    </main>
+    <footer>
+        <p>WDCC JavaScript Workshop | Page created by Tyne Crow</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session 3</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="../style_sheet/style.css">
+</head>
+<body>
+    <header>
+        <h1>WDCC JavaScript Workshop</h1>
+    </header>
+    <nav>
+        <a href="../home/home.html">Home</a> | 
+        <a href="../session_1/session_1.html">Session_1</a> |
+        <a href="../session_2/session_2.html">Session_2</a> |
+        <a href="../session_3/session_3.html">Session_3</a> |
+        <a href="../session_4/session_4.html">Session_4</a>
+    </nav>
+    <main>
+        <h2>Session 3</h2>
+        <h3>Session content:</h3>
+        <ul>
+            <li>Functions</li>
+            <li>Event handlers</li>
+            <li>JSON / JSObjects</li>
+        </ul>
+        <h3>
+            Example:
+        </h3>
+        <p>
+            This example loops through a simple array of JSObjects representing employees in a company and displays properties from each eployee object in the array within the page. It also calculates and displays the total cummulative years work experience for all employees in the employees array.
+        </p>
+        <p>
+            Observe the code carefully to see how it works. Look at the properties of the objects in the array are accessed and the syntax for looping through objects within the array.
+        </p>
+
+
+        <div id="example">
+            <h4>Employees</h4>
+            <div id="employees">
+
+            </div>
+
+            <br>
+            <button id="runExample">
+                Run example
+            </button>
+
+            <p id="displayExample">
+                Display example: 
+            </p>
+
+        </div>
+
+        <h3>
+            Exercise:
+        </h3>
+
+        <p>
+            In this exercise, you will see that the same data from Session 2 has been included within the runExercise() function. This data consists of two arrays: languages and descriptions.
+        </p>
+        <p>
+            For this exercise you will reformat the data so that the two separate arrays are converted into a single array of JSObjects. Each JSObject should have a language and description property.
+        </p>
+        <p>
+            The structure of the array of objects would be something like this: 
+        </p>
+        <pre>
+            <code>
+                const languageObjectsArray = [
+                    {
+                        property: value,
+                        property: value
+                    },
+                    {
+                        ...
+                    },
+                    {
+                        ...
+                    }
+                ];
+            </code>
+        </pre>
+        <p>
+            The array of JSObjects will be similar to the array of people from the example on this page. Make sure to check the example if you're unsure of how to complete the code.
+        </p>
+        <p>
+            Once you have finished structuring the data, write the code required to loop through the data and display it in the HTML page. You can display it within the div with the id "displayExercise". Think carefully about how to approach this. The structure should be similar to the code in session 2 but be looping through a single array of objects with nested properties. 
+        </p>
+        <h4>Optional extension task: </h4>
+        <p>
+            Add an extra property to each JSObject in the array of objects. This extra property should be called "features" and it should be an array that contains a list of features for each language. Add some features into the "features" array for each of the three languages. It can be a varying amount of features for each language.
+        </p>
+        <p>
+            Now write code that will automatically display all data from the array of languages objects in the page including the nested array. It should show the items within the nested arrays as unordered lists that display below the language name and description for each language. 
+        </p>
+
+        <div id="exercise">
+
+            <br>
+            <button id="runExercise">
+                Run exercise
+            </button>
+
+            <div id="displayExercise">Display exercise: </div>
+            
+        </div>
+
+    </main>
+    <footer>
+        <p>WDCC JavaScript Workshop | Page created by Tyne Crow</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="../style_sheet/style.css">
+</head>
+<body>
+    <header>
+        <h1>WDCC JavaScript Workshop</h1>
+    </header>
+    <nav>
+        <a href="../home/home.html">Home</a> | 
+        <a href="../session_1/session_1.html">Session_1</a> |
+        <a href="../session_2/session_2.html">Session_2</a> |
+        <a href="../session_3/session_3.html">Session_3</a> |
+        <a href="../session_4/session_4.html">Session_4</a>
+    </nav>
+    <main>
+        <h2>Session 1</h2>
+        <h3>Session content:</h3>
+        <ul>
+            <li>Recap on HTML & CSS</li>
+            <li>Including JavaScript in your page</li>
+            <li>Variables</li>
+            <li>Strings</li>
+            <li>Expressions</li>
+            <li>Debugging</li>
+            <li>Getting HTML elements with JavaScript</li>
+            <li>Modifying page elements with JavaScript</li>
+            <li>Basic event handling - button clicks</li>
+        </ul>
+        <h3>
+            Example:
+        </h3>
+        <p>
+            This example gets values from four input elements and displays a welcome message back to the user. 
+        </p>
+        <pre>
+            The steps in the code are:
+
+              -  get references to required elements
+              -  get the values from the inputs and store in variables
+              -  calculate any new variables needed
+              -  update page element/s to display the result
+            
+            Check the code & comments for specific steps.
+
+        </pre>
+
+        <div id="example">
+
+            <label for="first-name">First name:</label><br>
+            <input type="text" id="first-name"><br>
+            <label for="last-name">Last name:</label><br>
+            <input type="text" id="last-name"><br>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title"><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age"><br>
+
+            <br>
+            <button id="run-example">
+                Run example
+            </button>
+
+            <p id="display-example">
+                Display example: 
+            </p>
+        </div>
+
+        <h3>
+            Exercise:
+        </h3>
+        <p>
+            In this exercise, you will create a super hero name generator. You will use the 'Favourite colour', 'Favourite animal' and 'Favourite adjective' inputs to generate an output message with the super hero name; e.g., 'Your super hero name is <strong>The Ponderous Pink Pangolin</strong>'.
+        </p>
+        <p>The steps will be very similar to the example above so make sure to examine the example code if you need to.</p>
+
+        <pre>
+            The suggested steps in the code are:
+
+              -  get references to required elements
+              -  get the values from the inputs and store in variables
+              -  calculate any new variables needed or modify existing variables
+              -  update page element/s to display the result back to the user
+            
+            Check the JavaScript code and comments carefully to see where to write your steps.
+
+            Optional extension steps:
+
+              - automatically capitalise the first letter of every input
+                - Remember that a user may just enter lower case words
+                - You may need to research string operations
+              - create a second generator with different inputs to generate something like: 
+                - Rock Star Name, Super Villain Name, Disney Character Name 
+                - Try to be creative and think of different inputs to the super hero name
+                - You will need to create new HTML input elements in the HTML file
+                
+        </pre>
+
+        <div id="exercise">
+            <label for="favourite-colour">Favourite colour:</label><br>
+            <input type="text" id="favourite-colour"><br>
+            <label for="favourite-animal">Favourite animal:</label><br>
+            <input type="text" id="favourite-animal"><br>
+            <label for="favourite-adjective">Favourite adjective:</label><br>
+            <input type="text" id="favourite-adjective"><br>
+
+            <br>
+            <button id="run-exercise">
+                Run exercise
+            </button>
+
+            <p id="display-exercise">Display exercise: </p>
+        </div>
+
+    </main>
+    <footer>
+        <p>WDCC JavaScript Workshop |  Page created by Tyne Crow</p>
+    </footer>
+</body>
+</html>
